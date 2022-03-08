@@ -10,7 +10,7 @@ c1, c2,c3 = st.columns([1,3,1])
 with c1:    
     name1 = st.selectbox('Choose an image: ',('Bear','Clock','Wineglass','Stop','Kite','Train','Sheep','Fire_Hydrant','Pizza'))
     
-    st.image([Image.open("final_images/"+name1+"_Standard.png"),Image.open("final_images/"+name1+"_Attacked.png")],caption = ["Standard","Attacked"],width = 250)
+    st.image([Image.open("final_images/"+name1+"_Standard.png"),Image.open("final_images/"+name1+"_Attacked.png")],caption = ["Original","Attacked"],width = 250)
 
 with c2:
     
@@ -65,7 +65,7 @@ with c2:
         st.image(Image.open("final_images/ROI.png"),width = 500)
         st.image([Image.open('final_images/'+name1+'_Detection_unperturbed.png'),
         Image.open('final_images/'+name1+'_Detection_perturbed.png')],
-        caption = ["Standard","Attacked"],width = 250)
+        caption = ["Original","Attacked"],width = 250)
 
 
 
@@ -75,5 +75,5 @@ if (op=="Gradients"):
     op="Gradients1"
 
 with c3:
-    st.image(Image.open('final_images/'+name1+'_'+op+'_unperturbed.png'),caption = "Standard",width = 250)
+    st.image(Image.open('final_images/'+name1+'_'+op+'_unperturbed.png'),caption = "Original",width = 250)
     st.image(Image.open('final_images/'+name1+'_'+op+'_perturbed.png'),caption = "Attacked",width = 250)
