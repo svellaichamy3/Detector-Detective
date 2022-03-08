@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 
 st.set_page_config(page_title="Detector Detective: Investigating the Effect of Adversarial Examples on Object Detectors", layout="wide")
-st. markdown("<h2 style='text-align: center; color: blue;'>Detector Detective: Investigating the Effect of Adversarial Examples on Object Detectors</h2>", unsafe_allow_html=True)
+st. markdown("<h2 style='text-align: center; color: black;'>Detector Detective: Investigating the Effect of Adversarial Examples on Object Detectors</h2>", unsafe_allow_html=True)
 c1, c2,c3 = st.columns([1,3,1])
 
 st.write('<style>div.row-widget.stRadio > div{flex-direction:row; justify-content: flex-start;} </style>', unsafe_allow_html=True)
