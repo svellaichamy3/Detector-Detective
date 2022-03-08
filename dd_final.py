@@ -8,7 +8,7 @@ st. markdown("<h2 style='text-align: center; color: blue;'>Detector Detective: I
 c1, c2,c3 = st.columns([1,3,1])
 
 with c1:    
-    name1 = st.selectbox('Choose an image: ',('Bear','Clock','Vase','Stop','Kite','Train','Sheep','Bear','Motorcycle'))
+    name1 = st.selectbox('Choose an image: ',('Bear','Clock','Vase','Stop','Kite','Train','Sheep','Motorcycle'))
     
     st.image([Image.open("final_images/"+name1+"_Standard.png"),Image.open("final_images/"+name1+"_Attacked.png")],caption = ["Standard","Attacked"],width = 250)
 
