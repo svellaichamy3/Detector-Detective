@@ -9,7 +9,7 @@ c1, c2,c3 = st.columns([1,3,1])
 st.write('<style>div.row-widget.stRadio > div{flex-direction:row; justify-content: flex-start;} </style>', unsafe_allow_html=True)
 
 st.write('<style>div.st-bf{flex-direction:column;} div.st-ag{font-size:1rem; padding-left:2px; padding-right:10px;}</style>', unsafe_allow_html=True)
-st.write('<style>div.block-container{padding-top:6rem;}</style>', unsafe_allow_html=True)
+st.write('<style>div.block-container{padding-top:2rem;}</style>', unsafe_allow_html=True)
 
 
 with c1:    
